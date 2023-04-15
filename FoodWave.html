@@ -13,6 +13,21 @@ img {
   display: block;
   margin: -30px auto 0;
 }
+  .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+    
+    video {
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      width: 80%;
+      height: auto;
+    }
 </style>
 </head>
 <body>
@@ -21,12 +36,15 @@ img {
 
 <img src="FoodWave.gif">
 
-<video id="FoodWave2" width="960" height="510" controls>
+  
+<div class="video-container">
+<video id="FoodWave2" width="1920" height="1020" controls>
   <source src="FoodWave2.mov" type="video/mov">
 </video>
+</div>
 
 <script>
-var video = document.getElementById("myVideo");
+var video = document.getElementById("FoodWave2");
 
 document.onkeydown = function(e) {
   switch (e.keyCode) {
