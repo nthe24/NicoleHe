@@ -17,7 +17,7 @@ img {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 20px;
+      margin-top: 40px;
   }
     
     video {
@@ -53,12 +53,6 @@ document.onkeydown = function(e) {
         video.play();
       else
         video.pause();
-      break;
-    case 37: // left arrow
-      video.currentTime -= 10;
-      break;
-    case 39: // right arrow
-      video.currentTime += 10;
       break;
   }
 };
