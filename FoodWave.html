@@ -21,6 +21,30 @@ img {
 
 <img src="FoodWave.gif">
 
+<video id="FoodWave2" width="960" height="510" controls>
+  <source src="FoodWave2.mp4" type="video/mp4">
+</video>
+
+<script>
+var video = document.getElementById("myVideo");
+
+document.onkeydown = function(e) {
+  switch (e.keyCode) {
+    case 32: // spacebar
+      if (video.paused)
+        video.play();
+      else
+        video.pause();
+      break;
+    case 37: // left arrow
+      video.currentTime -= 10;
+      break;
+    case 39: // right arrow
+      video.currentTime += 10;
+      break;
+  }
+};
+</script>
 
 </body>
 </html>
